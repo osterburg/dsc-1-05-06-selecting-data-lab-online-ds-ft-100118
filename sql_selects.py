@@ -14,7 +14,7 @@ def select_name_and_color_of_planets_with_more_than_10_moons():
     return "SELECT name, color FROM planets WHERE num_of_moons > 10;"
 
 def select_all_planets_with_moons_and_mass_less_than_one():
-    return "SELECT * FROM planets WHERE num_of_moons < 1, mass < 1.00;"
+    return "SELECT * FROM planets WHERE num_of_moons < 1 AND mass < 1.00;"
 
 def select_name_and_color_of_all_blue_planets():
     return "SELECT name, color FROM planets WHERE color == "blue";"
